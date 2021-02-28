@@ -1,142 +1,538 @@
-
-
-.main-center{
-  background-image: url("../images/bg-desktop.svg");
-  background-color: hsl(257, 40%, 49%);
-  position: relative;
-  background-repeat:no-repeat;
-  padding-bottom: 35px;
+body{
+  margin:0;
+  background-color: hsl(218, 28%, 13%);
+  color:#fff;
 }
 
-.down-description{
+/*navigation bar*/
+.navbar{
+  padding: 30px 100px 30px 100px;
+  display:flex;
+  background-color: hsl(217, 28%, 15%);
+}
+
+.right-link{
+  flex-basis: 1300px;
+  text-align: right;
   display: flex;
-  flex-direction: row;
+  justify-content:flex-end;
+  align-items: center;
 }
 
-/*for image*/
-.up-logo{
-  padding-left: 50px;
-  padding-top: 30px;
-  padding-bottom: 50px;
+.navbar-link{
+  margin-left: 50px;
+  font-family: 'Raleway', sans-serif;
 }
 
-.img-left{
-  padding-left: 50px;
-  padding-right: 50px;
+/*first page*/
+
+.first-page{
+  text-align: center;
+  transition: 5s;
+  background-color: hsl(217, 28%, 15%);
+  background-image: url("../images/bg-curvy-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
 }
 
-
-
-/*all word and button*/
-.big-title,.big-title-description{
-  color: #fff;
+.first-page-heading{
+  font-family: 'Raleway', sans-serif;
+  padding-left: 430px;
+  padding-right: 430px;
 }
 
-.big-title{
-  font-family: 'Poppins', sans-serif;
-  font-size: 35px;
-  line-height: 1.5;
-  margin-bottom: 15px;
+.first-page-img{
+  width: 550px;
+  height: 400px;
 }
 
-.big-title-description{
+.first-page-description{
+  display: inline-block;
   font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  margin-right: 120px;
-  text-align: justify;
+  padding-left: 500px;
+  padding-right: 500px;
+  margin-top: 0;
+
+}
+
+.first-page-button{
+  border-width: 3px;
+  border-color: hsl(217, 28%, 15%);
+  width: 250px;
+  height: 50px;
+  border-radius: 40px;
+  margin-bottom: 50px;
+  background-color: hsl(176, 68%, 64%);
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color:#fff;
+  opacity: 0.8;
+  cursor: pointer;
+
+}
+
+.first-page-button:hover{
+  opacity: 1;
+  background-image: linear-gradient(to right,#fff,hsl(176, 68%, 64%));
+}
+
+
+/*second pages*/
+.all-features{
+  padding-left: 250px;
+  padding-right: 250px;
+  margin: 20px;
+}
+
+.features-head{
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+}
+
+.features-head-correction1{
+  margin-top: 10px;
+}
+
+.features-head-correction2{
+  margin-top: 7px;
+}
+
+.features-head-description{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
   line-height: 2;
 }
 
-.register-button{
-  background-color: #fff;
-  width: 225px;
-  height: 70px;
-  border: 3px solid;
-  border-color: hsl(257, 40%, 49%);
-  border-radius: 50px;
-  box-shadow: 3px 3px;
-}
-
-.register-button:hover{
-  background-color: #aba5d1;
-  transition-duration: 0.5s;
-}
-
-
-/*for the logo*/
-.down-logo{
-    text-align: right;
-    margin-right: 70px;
-    padding-bottom: 50px;
-}
-
-.social-logo{
-  margin: 10px;
-  padding: 20px;
-  color: #fff;
-  border-style: solid;
-  border-radius: 100%;
-}
-
-.twitter-logo{
-  padding:18px 17px;
-}
-
-.facebook-logo{
-  padding: 18px 20px;
-}
-
-.instagram-logo{
-  padding: 17px 16px;
-}
-
-
-@media (max-width:1216px){
-
-.advertisement-right{
+.features1, .features2{
   text-align: center;
-}
-.illustration{
-  width: 300px;
-}
-
-.main-center{
-  background-image: url("../images/bg-mobile.svg");
-  background-position: top;
-  background-size: contain;
+  display:flex;
+  flex-direction: row;
 }
 
-  .big-title{
-    font-size:25px;
-    margin:30px 25px 15px 25px;
+.up, .down, .up1, .up2{
+  flex-basis: 50%;
+  margin: 50px;
+}
+
+/*thirdpage*/
+.third-page{
+  display: flex;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-bottom: 140px;
+}
+
+.third-page-img{
+  width:700px;
+  height:500px;
+}
+
+.left-img-description{
+  position: relative;
+  top: 50px;
+}
+
+.third-page-head{
+  font-family: 'Raleway', sans-serif;
+  font-size: 36px;
+  line-height: 1.5;
+}
+
+.third-page-description{
+  line-height: 2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.fylo-third-link{
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+/*for fourth pages*/
+
+.backsreen-img{
+  position: relative;
+  left: 100px;
+  top: 40px;
+}
+
+.comment1, .comment2, .comment3{
+  margin: 25px;
+}
+
+.image-profiles{
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+
+}
+
+.fourth-page{
+  padding-left: 100px;
+  padding-right: 100px;
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 180px;
+}
+
+.comment{
+  display: flex;
+  padding-left: 70px;
+  padding-right: 70px;
+
+}
+
+.comment1,.comment2,.comment3{
+  background-color:hsl(219, 30%, 18%);
+  padding-left: 25px;
+  padding-right: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+.profile{
+  display: flex;
+  align-items:center;
+}
+
+.information{
+  margin: 10px;
+}
+
+.name{
+  margin-bottom: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.job{
+  margin-top: 0;
+}
+
+.name, .job{
+  font-size: 12px;
+}
+
+/*early access button*/
+
+.container{
+  position: absolute;
+  z-index: 1;
+}
+
+.early-access{
+  text-align: center;
+  margin: 20px 400px 20px 400px;
+  position: relative;
+  background-color: hsl(217, 28%, 15%);
+  padding: 10px 40px 0 40px;
+  bottom: 160px;
+}
+
+.early-access-button{
+  border-width: 3px solid;
+  border-color: hsl(217, 28%, 15%);
+  width: 185px;
+  height: 50px;
+  border-radius: 40px;
+  margin-bottom: 50px;
+  background-color: hsl(176, 68%, 64%);
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color:#fff;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#email{
+  width: 400px;
+  height: 40px;
+  border-radius: 40px;
+  margin-right: 10px;
+}
+
+.early-access-header{
+  font-family: 'Raleway', sans-serif;
+}
+
+.early-access-description{
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+/*phone and adress and another link*/
+.another-information{
+  display: flex;
+  align-items: flex-start;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.location,.number,.email-adress{
+  float: left;
+  margin-right: 20px;
+
+}
+.location{
+  width: 20px;
+  margin: 10px 20px 20px 0;
+
+}
+.number,.email-adress{
+  width: 20px;
+  height: 20px;
+}
+
+
+.address{
+  width: 400px;
+  margin-top: 50px;
+  margin-right: 120px;
+}
+
+.address-phone{
+  padding-left: 100px;
+  padding-top: 180px;
+  background-color: hsl(216, 53%, 9%);
+  padding-bottom: 50px;
+}
+
+.phone-up{
+  margin-top: 65px;
+}
+
+.email-phone{
+  margin-right: 120px;
+}
+
+.social-media{
+  margin-top: 65px;
+  position: relative;
+  left: 100px;
+}
+
+.social-media-logo{
+  border: 2px solid;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 5px;
+}
+
+.fa-facebook-f{
+  padding: 10px 12px 10px 12px;
+}
+
+.fa-twitter{
+  padding: 10px 8px 10px 8px;
+}
+
+.another-link{
+  display: flex;
+}
+
+.right-side{
+  margin-left: 20px;
+}
+
+.left-side{
+  margin-right: 20px;
+}
+
+
+@media(max-width:1343.8px){
+  body{
+  width: 1298px;
   }
 
-  .big-title-description{
-    margin: 0;
-    font-size: 18px;
+  .first-page{
     text-align: center;
+  }
+
+  .first-page-img{
+    width: 850px;
+    height: 700px;
+    margin-top: 70px;
+  }
+  .first-page-heading{
+    font-size: 80px;
+    margin: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    line-height: 1.5;
+    margin-top: 50px;
+  }
+
+  .first-page-description{
+    margin-top: 25px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 30px;
+    font-size: 50px;
+    line-height: 1.3;
   }
 
-  .down-description{
-    text-align: center;
-    display: block;
-    margin:0;
+  .first-page-button{
+    width: 700px;
+    height: 100px;
+    font-size: 30px;
   }
 
-  .register-button{
-    width: 230px;
-    height: 50px;
-  }
+/*second-page*/
 
-  .down-logo{
-    margin-right: 0;
-    text-align: center;
-    font-size: 0.6rem;
-    margin-top: 20px;
-    padding-bottom: 25px;
+.all-features{
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: 100px 30px 120px 30px;
+}
+
+.features1, .features2{
+  text-align: center;
+  display: block;
+}
+
+.features-head{
+  font-size: 40px;
+}
+
+.features-head-description{
+  font-size: 35px;
+}
+
+/*third page*/
+.third-page{
+  display: block;
+  padding: 0;
+}
+
+.third-page-img{
+  width: 900px;
+  height: 750px;
+}
+
+.left-img{
+  text-align: center;
+}
+
+.third-page-head{
+  font-size: 70px;
+  text-align: center;
+}
+
+.third-page-description{
+  font-size: 40px;
+  text-align: left;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.fylo-third-link{
+  padding-left: 80px;
+  font-size: 40px;
+  text-align: left;
+}
+
+/*fourth page*/
+.fourth-page{
+  padding: 0;
+}
+
+
+.comment{
+  display: flex;
+  flex-direction: column;
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-top: 100px;
+  margin-bottom: 500px;
+}
+
+.comment1,.comment2,.comment3{
+  width: 800px;
+  height: 400px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 35px;
+}
+
+.backsreen-img{
+  position: relative;
+  left: 230px;
+  top: 130px;
+}
+
+/*for early access*/
+
+.early-access{
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  position: relative;
+  background-color: hsl(217, 28%, 15%);
+  padding: 50px;;
+  font-size: 40px;
+  width: 800px;
+  height: 600px;
+  bottom: 350px;
+}
+
+
+.early-access-header{
+  font-size: 60px;
+}
+
+#email{
+  width: 698px;
+  height: 80px;
+}
+
+.early-access-button{
+  width: 700px;
+  height: 80px;
+}
+
+/*for another link*/
+
+.another-information{
+  display: flex;
+  flex-direction: column;
+}
+
+.address-phone{
+  padding-top: 500px;
+}
+
+.footer-logo{
+  width: 400px;
+  height:130px;
+}
+
+.phone-up, .email-down{
+  margin: 50px 0;
+}
+
+.number,.email-adress{
+  width: 50px;
+  height: 50px;
+
+}
+
+.location{
+width: 50px;
+height: 70px;
+}
+
+.address, .phone-up, .email-down{
+  font-size: 23px;
+  width: 500px;
+}
+
+.another-link{
+  font-size: 30px;
+}
+
+
+  .social-media{
+    left: 0;
   }
 
 }
