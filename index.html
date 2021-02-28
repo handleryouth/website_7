@@ -6,11 +6,10 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a2c4d65c9a.js" crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+  <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -19,37 +18,187 @@
   </style>
 </head>
 <body>
-  <div class="main-center">
-    <div class="up-logo">
-      <img src="images/logo.svg" alt="Huddle-logo">
+  <div class="navbar">
+    <div class="left-image">
+      <img src="images/logo.svg" alt="website-logo">
+    </div>
+    <div class="right-link">
+      <p class="navbar-link">Features</p>
+      <p class='navbar-link'>Team</p>
+      <p class='navbar-link'>Sign In</p>
+    </div>
+  </div>
+
+  <!--first page-->
+  <div class="first-page">
+  <img class="first-page-img" src="images/illustration-intro.png" alt="illustration-img">
+  <h1 class="first-page-heading">All your files in one secure location, accessible anywhere.</h1>
+  <p class="first-page-description">Fylo stores all your most important files in one secure location. Access them wherever
+  you need, share and collaborate with friends family, and co-workers.</p>
+  <button class="first-page-button" type="button" name="button">Get Started</button>
+  </div>
+
+  <!--second page-->
+  <div class="all-features">
+    <!--up features-->
+    <div class="features1">
+      <div class="up">
+        <img src="images/icon-access-anywhere.svg" alt="access-img">
+        <h3 class="features-head features-head-correction1">Access your files, anywhere</h3>
+        <p class="features-head-description">The ability to use a smartphone, tablet, or computer to access your account means your
+          files follow you everywhere.</p>
+      </div>
+      <div class="down">
+        <img src="images/icon-security.svg" alt="security-img">
+        <h3 class="features-head">Security you can trust</h3>
+        <p class="features-head-description">2-factor authentication and user-controlled encryption are just a couple of the security
+        features we allow to help secure your files.</p>
+      </div>
     </div>
 
-    <div class="down-description">
-      <div class="img-left">
-        <img class = "illustration" src="images/illustration-mockups.svg" alt="devices-img">
+    <div class="features2">
+      <div class="up1">
+        <img src="images/icon-collaboration.svg" alt="collaboration-img">
+        <h3 class="features-head">Real-time collaboration</h3>
+        <p class="features-head-description">Securely share files and folders with friends, family and colleagues for live collaboration.
+        No email attachments required.</p>
       </div>
-
-      <div class="advertisement-right">
-        <h1 class="big-title">Build The Community <br> Your Fans Will Love</h1>
-        <p class="big-title-description">Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
-        Create connections with your users as you engage in genuine discussion.</p>
-        <button class="register-button" type="button">Register</button>
-
+      <div class="up2">
+        <img src="images/icon-any-file.svg" alt="any-file">
+        <h3 class="features-head features-head-correction2">Store any type of file</h3>
+        <p class="features-head-description">Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all
+        file types to be securely stored and shared.</p>
       </div>
     </div>
+  </div>
 
-    <div class="down-logo">
-      <i class="fab fa-facebook-f fa-lg social-logo facebook-logo"></i>
-      <i class="fab fa-twitter fa-lg social-logo twitter-logo"></i>
-      <i class="fab fa-instagram fa-lg social-logo instagram-logo"></i>
+
+  <!--third page-->
+  <div class="third-page">
+    <div class="left-img">
+      <img class='third-page-img' src="images/illustration-stay-productive.png" alt="stay-productive">
+    </div>
+    <div class="left-img-description">
+      <h1 class="third-page-head">Stay productive, wherever you are</h1>
+      <p class="third-page-description">Never let location be an issue when accessing your files. Fylo has you covered for all of your file
+      storage needs.<br>
+
+      Securely share files and folders with friends, family and colleagues for live collaboration. No email
+      attachments required.</p>
+      <a class = "fylo-third-link" href="#">See how Fylo works</a>
+    </div>
+  </div>
+
+  <!--fourth page-->
+  <div class="fourth-page">
+    <img class="backsreen-img" src="images/bg-quotes.png" alt=quotation>
+    <div class="comment">
+      <div class="comment1">
+        <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
+        become a well-oiled collaboration machine.</p>
+        <div class="profile">
+          <div class="image-profile-1">
+            <img class="image-profiles" src="images/profile-1.jpg" alt="Satish-Patel">
+          </div>
+          <div class="information">
+            <h3 class="name">Satish Patel</h3>
+            <p class="job">Founder & CEO, Huddle</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="comment2">
+        <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
+        become a well-oiled collaboration machine.</p>
+        <div class="profile">
+          <div class="image-profile-2">
+            <img class="image-profiles" src="images/profile-2.jpg" alt="Bruce-Mckenzie">
+          </div>
+          <div class="information">
+            <h3 class="name">Bruce McKenzie</h3>
+            <p class="job">Founder & CEO, Huddle</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="comment3">
+        <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
+        become a well-oiled collaboration machine.</p>
+        <div class="profile">
+          <div class="image-profile-3">
+            <img class ="image-profiles" src="images/profile-3.jpg" alt="Iva Boyd">
+          </div>
+          <div class="information">
+            <h3 class="name">Iva Boyd</h3>
+            <p class="job">Founder & CEO, Huddle</p>
+          </div>
+        </div>
+      </div>
     </div>
 
   </div>
 
+
+  <!--early access-->
+  <div class="container">
+    <div class="early-access">
+        <h1 class="early-access-header">Get early access today</h1>
+        <p class="early-access-description">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+        questions, our support team would be happy to help you.</p>
+        <form class="" action="index.html" method="post">
+          <input type="email" name="email" id="email" placeholder="email@example.com">
+          <button class="early-access-button" type="button" name="button">Get Started For Free</button>
+        </form>
+
+    </div>
+  </div>
+
+
+  <!--another information-->
+  <div class="address-phone">
+    <img  class="footer-logo" src="images/logo.svg" alt="our-logo">
+    <div class="another-information">
+      <div class="address">
+        <p><img class="location" src="images/icon-location.svg" alt="location">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua</p>
+      </div>
+
+      <div class="email-phone">
+
+        <p class="phone-up"><img class="number" src="images/icon-phone.svg" alt="phone-img">+1-543-123-4567</p>
+        <p class="email-down"><img class="email-adress" src="images/icon-email.svg" alt="email-img">example@fylo.com</p>
+      </div>
+
+      <div class="another-link">
+          <div class="left-side">
+            <p>About Us</p>
+            <p>Jobs</p>
+            <p>Press</p>
+            <p>Blog</p>
+          </div>
+
+          <div class="right-side">
+            <p>Contact Us</p>
+            <p>Terms</p>
+            <p>Privacy</p>
+
+          </div>
+      </div>
+
+      <div class="social-media">
+        <i class="fab fa-facebook-f fa-lg social-media-logo"></i>
+        <i class="fab fa-twitter fa-lg social-media-logo"></i>
+        <i class="fab fa-instagram fa-lg social-media-logo"></i>
+      </div>
+    </div>
+
+  </div>
+
+
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Tony Gultom</a>.
+      Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
 </body>
