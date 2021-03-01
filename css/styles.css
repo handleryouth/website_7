@@ -357,8 +357,248 @@ body{
 }
 
 
-@media(max-width:1343.8px){
-/*for padding*/
+@media(max-width:1207px) and (min-width: 690px){
+for padding
+  .navbar{
+    padding: 20px 0 10px 20px;
+  }
+
+  .logo-image{
+    width: 95px;
+    height: 31px;
+  }
+
+  .navbar-link{
+    margin: 10px;
+    font-size: 10px;
+  }
+
+  .right-link{
+    padding-right: 10px;
+  }
+
+
+starting first page
+  .first-page{
+    text-align: center;
+  }
+
+  .first-page-img{
+    width: 300px;
+    height: 200px;
+    margin-top: 70px;
+  }
+  .first-page-heading{
+    font-size: 20px;
+    margin: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    line-height: 1.5;
+    margin-top: 50px;
+  }
+
+  .first-page-description{
+    margin-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 15px;
+    line-height: 1.3;
+  }
+
+  .first-page-button{
+    width: 200px;
+    height: 40px;
+    font-size: 10px;
+  }
+
+/*second-page*/
+
+.all-features{
+  padding: 0;
+  margin: 0;
+}
+
+.features1, .features2{
+  text-align: center;
+  display: block;
+}
+
+.features-head{
+  font-size: 20px;
+}
+
+.features-head-description{
+  font-size: 13px;
+}
+
+/*third page*/
+.third-page{
+  display: block;
+  padding: 0;
+}
+
+.third-page-img{
+  width: 350px;
+  height: 250px;
+}
+
+.left-img{
+  text-align: center;
+}
+
+.third-page-head{
+  font-size: 20px;
+  text-align: center;
+}
+
+.third-page-description{
+  font-size: 13px;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.the-third-link{
+  text-align: center;
+}
+
+.fylo-third-link{
+  padding-left: 20px;
+  font-size: 13px;
+}
+
+.third-link-underline{
+  margin:auto;
+  width: 140px;
+}
+
+
+/*fourth page*/
+.fourth-page{
+  padding: 0;
+  display: flex;
+  align-items:flex-start;
+  justify-content: center;
+}
+
+
+.comment{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:15px;
+  margin-bottom: 0;
+}
+
+.comment1,.comment2,.comment3{
+  width: 400px;
+  height: 150px;
+  padding:25px;
+  font-size: 14px;
+}
+
+.image-profiles{
+  width: 40px;
+  height: 40px;
+}
+
+.backsreen-img{
+  position: relative;
+  left: 40px;
+  bottom: 130px;
+  left: 100px;
+  bottom: 80px;
+  top: 0;
+}
+
+/*for early access*/
+
+.container{
+  position: relative;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+
+.early-access{
+  position: relative;
+  text-align: center;
+  margin:0;
+  background-color: hsl(217, 28%, 15%);
+  font-size: 11px;
+  width: 300px;
+  height: 250px;
+  padding-bottom: 20px;
+  top: 140px;
+}
+
+
+.early-access-header{
+  font-size: 18px;
+}
+
+#email{
+  width: 200px;
+  height: 35px;
+  margin: 13px 0;
+}
+
+.early-access-button{
+  width: 210px;
+  height: 40px;
+}
+
+/*for another link*/
+
+.another-information{
+  display: flex;
+  flex-direction: column;
+}
+
+.address-phone{
+  margin-top: 0;
+  padding-left: 30px;
+}
+
+.footer-logo{
+  width: 120px;
+  height:40px;
+}
+
+.phone-up, .email-down{
+  margin: 50px 0;
+}
+
+.number,.email-adress{
+  width: 30px;
+  height: 30px;
+
+}
+
+.location{
+width: 30px;
+height: 35px;
+}
+
+.address, .phone-up, .email-down{
+  font-size: 16px;
+  width: 320px;
+}
+
+.another-link{
+  font-size: 16px;
+}
+
+  .social-media{
+    left: 0;
+  }
+
+}
+
+
+@media (max-width:690px){
   .navbar{
     padding: 0;
   }
@@ -576,4 +816,5 @@ height: 35px;
     left: 0;
   }
 
+}
 }
