@@ -719,7 +719,7 @@ height: 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding:0;
+  padding:20px 0 0 0;
   margin-bottom: 0;
 }
 
@@ -737,7 +737,7 @@ height: 35px;
 
 .backsreen-img{
   position: relative;
-  left: 100px;
+  left: 80px;
   top: 0;
 }
 
