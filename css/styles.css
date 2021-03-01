@@ -134,6 +134,13 @@ body{
   top: 50px;
 }
 
+.arrow-link{
+  position: relative;
+  top: 3px;
+}
+
+
+
 .third-page-head{
   font-family: 'Raleway', sans-serif;
   font-size: 36px;
@@ -147,6 +154,16 @@ body{
 
 .fylo-third-link{
   font-family: 'Open Sans', sans-serif;
+  text-decoration: None;
+  color: hsl(176, 68%, 64%);
+}
+
+.third-link-underline{
+  width: 170px;
+  margin-left: 0;
+  height: 1px;
+  background-color: hsl(176, 68%, 64%);
+  border-color: hsl(218, 28%, 13%);
 }
 
 
@@ -341,21 +358,34 @@ body{
 
 
 @media(max-width:1343.8px){
-  body{
-  width: 1298px;
+/*for padding*/
+  .navbar{
+    padding: 0;
   }
 
+  .logo-image{
+    width: 120px;
+    height: 40px;
+  }
+
+  .navbar-link{
+    margin: 10px;
+    font-size: 10px;
+  }
+
+
+/*starting first page*/
   .first-page{
     text-align: center;
   }
 
   .first-page-img{
-    width: 850px;
-    height: 700px;
+    width: 300px;
+    height: 200px;
     margin-top: 70px;
   }
   .first-page-heading{
-    font-size: 80px;
+    font-size: 20px;
     margin: 0;
     padding-left: 25px;
     padding-right: 25px;
@@ -367,22 +397,21 @@ body{
     margin-top: 25px;
     padding-left: 50px;
     padding-right: 50px;
-    font-size: 50px;
+    font-size: 15px;
     line-height: 1.3;
   }
 
   .first-page-button{
-    width: 700px;
-    height: 100px;
-    font-size: 30px;
+    width: 200px;
+    height: 40px;
+    font-size: 10px;
   }
 
 /*second-page*/
 
 .all-features{
-  padding-left: 100px;
-  padding-right: 100px;
-  margin: 100px 30px 120px 30px;
+  padding: 0;
+  margin: 0;
 }
 
 .features1, .features2{
@@ -391,11 +420,11 @@ body{
 }
 
 .features-head{
-  font-size: 40px;
+  font-size: 20px;
 }
 
 .features-head-description{
-  font-size: 35px;
+  font-size: 13px;
 }
 
 /*third page*/
@@ -405,8 +434,8 @@ body{
 }
 
 .third-page-img{
-  width: 900px;
-  height: 750px;
+  width: 350px;
+  height: 250px;
 }
 
 .left-img{
@@ -414,21 +443,27 @@ body{
 }
 
 .third-page-head{
-  font-size: 70px;
+  font-size: 20px;
   text-align: center;
 }
 
 .third-page-description{
-  font-size: 40px;
+  font-size: 13px;
   text-align: left;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .fylo-third-link{
-  padding-left: 80px;
-  font-size: 40px;
+  padding-left: 20px;
+  font-size: 13px;
   text-align: left;
+}
+
+.third-link-underline{
+  margin-left: 20px;
+  width: 140px;
+
 }
 
 /*fourth page*/
@@ -440,54 +475,60 @@ body{
 .comment{
   display: flex;
   flex-direction: column;
-  padding-left: 200px;
-  padding-right: 200px;
-  margin-top: 100px;
-  margin-bottom: 500px;
+  padding:15px;
+  margin-bottom: 150px;
 }
 
 .comment1,.comment2,.comment3{
-  width: 800px;
-  height: 400px;
-  padding-left: 25px;
-  padding-right: 25px;
-  font-size: 35px;
+  width: 250px;
+  height: 200px;
+  padding:25px;
+  font-size: 14px;
+}
+
+.image-profiles{
+  width: 40px;
+  height: 40px;
 }
 
 .backsreen-img{
   position: relative;
-  left: 230px;
-  top: 130px;
+  left: 40px;
+  bottom: 130px;
+  top: 50px;
 }
 
 /*for early access*/
 
+.container{
+  left: 35px;
+  top: 3600px;
+}
+
 .early-access{
   text-align: center;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin:0;
   position: relative;
   background-color: hsl(217, 28%, 15%);
-  padding: 50px;;
-  font-size: 40px;
-  width: 800px;
-  height: 600px;
-  bottom: 350px;
+  font-size: 10px;
+  width: 200px;
+  height: 250px;
 }
 
 
 .early-access-header{
-  font-size: 60px;
+  font-size: 18px;
 }
 
 #email{
-  width: 698px;
-  height: 80px;
+  width: 200px;
+  height: 35px;
+  margin: 13px 0;
 }
 
 .early-access-button{
-  width: 700px;
-  height: 80px;
+  width: 210px;
+  height: 40px;
 }
 
 /*for another link*/
@@ -498,12 +539,13 @@ body{
 }
 
 .address-phone{
-  padding-top: 500px;
+  margin-top: 100px;
+  padding-left: 30px;
 }
 
 .footer-logo{
-  width: 400px;
-  height:130px;
+  width: 120px;
+  height:40px;
 }
 
 .phone-up, .email-down{
@@ -511,25 +553,24 @@ body{
 }
 
 .number,.email-adress{
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 
 }
 
 .location{
-width: 50px;
-height: 70px;
+width: 30px;
+height: 35px;
 }
 
 .address, .phone-up, .email-down{
-  font-size: 23px;
-  width: 500px;
+  font-size: 16px;
+  width: 320px;
 }
 
 .another-link{
-  font-size: 30px;
+  font-size: 16px;
 }
-
 
   .social-media{
     left: 0;
