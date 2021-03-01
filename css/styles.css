@@ -378,7 +378,7 @@ for padding
   }
 
 
-starting first page
+/*starting first page*/
   .first-page{
     text-align: center;
   }
@@ -708,15 +708,18 @@ height: 35px;
 
 /*fourth page*/
 .fourth-page{
-  padding: 0;
-}
+    padding: 0 55px 0 0;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+  }
 
 
 .comment{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding:15px;
+  padding:0;
   margin-bottom: 0;
 }
 
@@ -734,10 +737,10 @@ height: 35px;
 
 .backsreen-img{
   position: relative;
-  left: 40px;
-  bottom: 130px;
-  top: 50px;
+  left: 100px;
+  top: 0;
 }
+
 
 /*for early access*/
 
@@ -747,6 +750,7 @@ height: 35px;
   flex-direction:column;
   justify-content: center;
   align-items: center;
+  height: 200px;
 }
 
 .early-access{
@@ -757,7 +761,7 @@ height: 35px;
   font-size: 10px;
   width: 200px;
   height: 250px;
-  top: 140px;
+  top: 100px;
 }
 
 
