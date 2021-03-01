@@ -715,8 +715,9 @@ height: 35px;
 .comment{
   display: flex;
   flex-direction: column;
-  padding:10px;
-  margin-bottom: 150px;
+  align-items: center;
+  padding:15px;
+  margin-bottom: 0;
 }
 
 .comment1,.comment2,.comment3{
@@ -741,8 +742,11 @@ height: 35px;
 /*for early access*/
 
 .container{
-  left: 35px;
-  top: 3600px;
+  position: relative;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
 }
 
 .early-access{
@@ -753,6 +757,7 @@ height: 35px;
   font-size: 10px;
   width: 200px;
   height: 250px;
+  top: 140px;
 }
 
 
@@ -779,7 +784,6 @@ height: 35px;
 }
 
 .address-phone{
-  margin-top: 100px;
   padding-left: 30px;
 }
 
