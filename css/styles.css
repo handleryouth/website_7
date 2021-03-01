@@ -600,7 +600,7 @@ height: 35px;
 
 @media (max-width:690px){
   .navbar{
-    padding: 0;
+    padding: 20px 0px 20px 20px;
   }
 
   .logo-image{
